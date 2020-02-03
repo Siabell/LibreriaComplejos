@@ -42,3 +42,10 @@ class ComplexNumber:
     def phase(nComplex):
         return math.atan(nComplex.partReal/nComplex.partImag)
 
+    def inverse(nComplex):
+        nComplex.partReal = nComplex.partReal*-1
+        nComplex.partImag = nComplex.partImag*-1
+
+    def showNumber(num):
+        print(num.partReal,num.partImag)
+
